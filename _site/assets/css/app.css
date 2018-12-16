@@ -1,0 +1,305 @@
+/* ==============================================
+   FONTS
+   ============================================== */
+h1 {
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+  text-underline-position: under;
+  font-size: 25pt !important;
+  font-family: Helvetica, Arial, sans-serif !important; }
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  text-underline-position: under;
+  font-size: 18pt !important;
+  font-family: Helvetica, Arial, sans-serif !important;
+  padding: 0 0 20px 0; }
+
+h3 {
+  text-align: left;
+  text-transform: uppercase;
+  text-underline-position: under;
+  font-size: 14pt !important;
+  font-family: Helvetica, Arial, sans-serif !important;
+  padding: 0 0 20px 0; }
+
+p {
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif !important;
+  font-size: 12pt; }
+
+/* ==============================================
+   COLORS
+   ============================================== */
+/* ==============================================
+   GLOBAL STYLES
+   ============================================== */
+/* Logo */
+.container-quote {
+  background-color: black;
+  color: white;
+  text-align: center; }
+
+.container-fluid {
+  background-color: white; }
+
+/* Navigatie */
+.navbar-logo {
+  width: 60px;
+  height: auto;
+  margin-right: 10px;
+  margin-bottom: 15px; }
+
+#navbarText {
+  display: inline-flex !important;
+  justify-content: flex-end !important; }
+
+.navbar {
+  display: inline-flex;
+  width: 100% !important;
+  align-content: space-between; }
+
+.nav-link:hover {
+  color: #e0ad32 !important; }
+
+.bg-light {
+  background-color: white !important; }
+
+/* Footer */
+.footer {
+  margin: 20px 0px 0px 0px;
+  width: 100%;
+  height: 80px;
+  background-color: black;
+  position: sticky; }
+
+.footericons ul li {
+  margin-right: 30px;
+  padding-top: 30px;
+  display: block;
+  float: right; }
+
+.footertext {
+  color: white;
+  float: left;
+  margin-left: 30px;
+  padding-top: 30px; }
+
+/* Footer icons */
+.fab {
+  color: white;
+  font-size: 25px;
+  margin-right: 10px; }
+
+.fab:hover {
+  color: #e0ad32; }
+
+/* ==============================================
+    INDEX
+============================================== */
+/* Tekstblok */
+.tekst {
+  width: 100%; }
+
+.foto {
+  min-width: 100%;
+  max-width: 100%;
+  width: 100%;
+  height: 100%; }
+
+.foto img {
+  min-width: 100%;
+  max-width: 100%;
+  width: 100%;
+  height: 100%; }
+
+/* Tekstblok button */
+.btn {
+  border-radius: 0 !important;
+  bottom: 15px !important;
+  color: white !important;
+  background-color: #e0ad32 !important;
+  display: block !important;
+  width: auto !important;
+  border: none !important;
+  padding: 14px 28px !important;
+  font-size: 14px !important;
+  cursor: pointer !important;
+  text-align: center !important;
+  margin: auto !important;
+  min-width: auto; }
+
+.btn:hover {
+  background-color: #c08c14 !important; }
+
+/* ==============================================
+    SHOP
+============================================== */
+.shop {
+  text-align: center; }
+
+.shop img {
+  width: 60%;
+  height: auto;
+  padding: 30px 0;
+  opacity: 0.7;
+  position: relative;
+  display: inline-block; }
+
+.shop a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.center {
+  position: relative;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  font-family: Helvetica, Arial, sans-serif; }
+
+/* ==============================================
+    SHOP ALL
+============================================== */
+body {
+  height: 100%; }
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  display: inline-block;
+  width: 180px;
+  height: 100%; }
+
+div.gallery:hover {
+  border: 1px solid #777;
+  opacity: 0.8; }
+
+div.gallery img {
+  width: 100%;
+  height: 100%; }
+
+div.desc {
+  padding: 15px;
+  text-align: center; }
+
+div.container-shop {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  height: 100% !important;
+  width: auto;
+  padding: auto;
+  margin: auto; }
+
+/* ==============================================
+    SHOP SOLOSOCKS
+============================================== */
+/* ==============================================
+    SHOP SOLOSOCKS SHARE
+============================================== */
+/* ==============================================
+    ABOUT
+============================================== */
+.row {
+  width: 100% !important; }
+
+.col-img {
+  width: 50% !important; }
+
+.col-img img {
+  width: 100%; }
+
+.col-txt {
+  width: 50% !important; }
+
+.tekst-about {
+  text-align: left;
+  font-family: Helvetica, Arial, sans-serif !important;
+  font-size: 12pt;
+  margin: 0 0 0 0; }
+
+/* ==============================================
+    CONTACT
+============================================== */
+.tekst-contact {
+  text-align: left;
+  margin: 10% 0 0 10%; }
+
+.tekst-contact2 {
+  text-align: left;
+  margin: 15% 0 10% 10%; }
+
+form {
+  margin: 0 0 10% 10%;
+  width: 70%; }
+
+/* ==============================================
+    CART
+============================================== */
+/* ==============================================
+    MEDIA QUERIES
+============================================== */
+/* Extra small devices (portrait phones, less than 576px)
+/ No media query since this is the default in Bootstrap*/
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+  .tekst {
+    width: 100%; }
+
+  .foto {
+    width: 100%; } }
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  /* INDEX */
+  .tekst {
+    width: 50%; }
+
+  .foto {
+    width: 50%; }
+
+  .container {
+    width: 100% !important; }
+
+  /* ABOUT */
+  .tekst-contact {
+    text-align: left;
+    margin: 5% 0 0 10%; }
+
+  .tekst-contact2 {
+    text-align: left;
+    margin: 5% 0 2% 10%; }
+
+  form {
+    margin: 0 0 10% 10%;
+    width: 50%; }
+
+  /* SHOP ALL */
+  div.gallery {
+    width: 25%; } }
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  .tekst {
+    width: 50%; }
+
+  .foto {
+    width: 50%; }
+
+  .container {
+    width: 100% !important; } }
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  .tekst {
+    width: 50%; }
+
+  .foto {
+    width: 50%; }
+
+  .container {
+    width: 100% !important; } }
