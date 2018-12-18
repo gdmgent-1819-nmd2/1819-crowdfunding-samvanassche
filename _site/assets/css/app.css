@@ -52,18 +52,6 @@ p {
   margin-right: 10px;
   margin-bottom: 15px; }
 
-#navbarText {
-  display: inline-flex !important;
-  justify-content: flex-end !important; }
-
-.navbar {
-  display: inline-flex;
-  width: 100% !important;
-  align-content: space-between; }
-
-.nav-link:hover {
-  color: #e0ad32 !important; }
-
 .bg-light {
   background-color: white !important; }
 
@@ -100,20 +88,21 @@ p {
     INDEX
 ============================================== */
 /* Tekstblok */
+.row-eq-height > div {
+  padding-right: 0;
+  padding-left: 0; }
+
+.row-eq-height > div > div {
+  height: 100%; }
+
 .tekst {
   width: 100%; }
 
 .foto {
-  min-width: 100%;
-  max-width: 100%;
-  width: 100%;
-  height: 100%; }
+  overflow: hidden; }
 
 .foto img {
-  min-width: 100%;
-  max-width: 100%;
-  width: 100%;
-  height: 100%; }
+  width: 100%; }
 
 /* Tekstblok button */
 .btn {
@@ -207,9 +196,6 @@ div.container-shop {
 /* ==============================================
     ABOUT
 ============================================== */
-.row {
-  width: 100% !important; }
-
 .col-img {
   width: 50% !important; }
 
@@ -253,15 +239,16 @@ form {
   .tekst {
     width: 100%; }
 
-  .foto {
-    width: 100%; } }
+  .row-eq-height > div > div {
+    height: 400px; }
+
+  .foto img {
+    width: auto;
+    height: 100%; } }
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
   /* INDEX */
   .tekst {
-    width: 50%; }
-
-  .foto {
     width: 50%; }
 
   .container {
@@ -288,9 +275,6 @@ form {
   .tekst {
     width: 50%; }
 
-  .foto {
-    width: 50%; }
-
   .container {
     width: 100% !important; } }
 /* Extra large devices (large desktops, 1200px and up)*/
@@ -298,8 +282,12 @@ form {
   .tekst {
     width: 50%; }
 
-  .foto {
-    width: 50%; }
+  .row-eq-height > div > div {
+    height: auto; }
+
+  .foto img {
+    width: 100%;
+    height: auto; }
 
   .container {
     width: 100% !important; } }
