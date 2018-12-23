@@ -24,7 +24,7 @@
     </div>
 </div>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="https://gdmgent-1819-nmd2.github.io/1819-crowdfunding-samvanassche/">
         <img src="images/logo.png" class="navbar-logo" alt="logo">
     </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" >
@@ -57,10 +57,10 @@
 
 <div class="container">
     <div class="row">
-       <div class="col-img col-sm-12 col-md-6 col-lg-6 col-xl-6">
+       <div class="col-img col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
         <img src="images/sokken.jpg" alt="Socks">
       </div>
-      <div class="col-txt col-sm-12 col-md-6 col-lg-6 col-xl-6">
+      <div class="col-txt col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
         <h3> 
             OUR STORY
         </h3>
@@ -77,14 +77,14 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-txt col-sm-12 col-md-6 col-lg-6 col-xl-6">
-        <h3>
+      <div class="col-txt col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <h3 class="h3-about">
             SOCIAL RESPONSIBILITY
         </h3>
-        <h3>
+        <h3 class="h3-about">
             SOLOSOCKS        
         </h3>
-        <p class="tekst-about">
+        <p class="tekst-about2">
             At SOLOSOCKS we are conscious about our economic, 
             social and environmental responsibilities. 
 
@@ -106,16 +106,16 @@
             ‘Nilorn’ who has signed the ‘UN Global Compacts 
             principles of sustainability’.
         </p>
-        <h3>
+        <h3 class="h3-about">
             SOLOSOCKS SHARE
         </h3>
-        <p class="tekst-about">
+        <p class="tekst-about2">
             Change the world 1 pair at the time. 
             Each time you buy a pair of socks, we will donate one pair to the homeless 
             - in your country!
         </p>
       </div>
-      <div class="col-img col-sm-12 col-md-6 col-lg-6 col-xl-6">
+      <div class="col-img col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
         <img src="images/sokken-roze.jpg">
         <img src="images/shop all.jpg">
       </div>
@@ -141,8 +141,26 @@
     </div>    
 </footer>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<!-- Script om automatisch class active aan nav toe te voegen -->
+<script>
+    jQuery(document).ready(function($){
+    // Get current path and find target link
+    var path = window.location.pathname.split("/").pop();
+    // Account for home page with empty path
+    if ( path == '' ) {
+    path = 'index.html';
+    }
+    var target = $('nav a[href="'+path+'"]');
+    // Add active class to target link
+    target.addClass('active');
+    });
+</script>
+
 </body>
 
 </html>

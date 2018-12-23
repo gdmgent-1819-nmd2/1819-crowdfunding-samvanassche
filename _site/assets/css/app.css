@@ -7,7 +7,8 @@ h1 {
   text-transform: uppercase;
   text-underline-position: under;
   font-size: 25pt !important;
-  font-family: Helvetica, Arial, sans-serif !important; }
+  font-family: Helvetica, Arial, sans-serif !important;
+  padding: 0 0 20px 0; }
 
 h2 {
   text-align: center;
@@ -23,7 +24,7 @@ h3 {
   text-underline-position: under;
   font-size: 14pt !important;
   font-family: Helvetica, Arial, sans-serif !important;
-  padding: 0 0 20px 0; }
+  padding: 20px 0 0 0; }
 
 p {
   text-align: center;
@@ -54,6 +55,12 @@ p {
 
 .bg-light {
   background-color: white !important; }
+
+.nav-link:hover, .nav-link:active {
+  color: #e0ad32 !important; }
+
+.active {
+  color: #e0ad32 !important; }
 
 /* Footer */
 .footer {
@@ -96,7 +103,8 @@ p {
   height: 100%; }
 
 .tekst {
-  width: 100%; }
+  width: 100%;
+  padding: 20px; }
 
 .foto {
   overflow: hidden; }
@@ -200,7 +208,8 @@ div.container-shop {
   width: 50% !important; }
 
 .col-img img {
-  width: 100%; }
+  width: 100%;
+  padding: 10px 0 0 0; }
 
 .col-txt {
   width: 50% !important; }
@@ -209,7 +218,16 @@ div.container-shop {
   text-align: left;
   font-family: Helvetica, Arial, sans-serif !important;
   font-size: 12pt;
-  margin: 0 0 0 0; }
+  margin: 20px 0 0 0; }
+
+.h3-about {
+  text-align: right; }
+
+.tekst-about2 {
+  text-align: right;
+  font-family: Helvetica, Arial, sans-serif !important;
+  font-size: 12pt;
+  margin: 20px 0 0 0; }
 
 /* ==============================================
     CONTACT
@@ -236,6 +254,7 @@ form {
 / No media query since this is the default in Bootstrap*/
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
+  /* Index */
   .tekst {
     width: 100%; }
 
@@ -247,14 +266,11 @@ form {
     height: 100%; } }
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
-  /* INDEX */
-  .tekst {
-    width: 50%; }
-
+  /* Index */
   .container {
     width: 100% !important; }
 
-  /* ABOUT */
+  /* Contact */
   .tekst-contact {
     text-align: left;
     margin: 5% 0 0 10%; }
@@ -272,16 +288,12 @@ form {
     width: 25%; } }
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
-  .tekst {
-    width: 50%; }
-
+  /* Index */
   .container {
     width: 100% !important; } }
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
-  .tekst {
-    width: 50%; }
-
+  /* Index */
   .row-eq-height > div > div {
     height: auto; }
 

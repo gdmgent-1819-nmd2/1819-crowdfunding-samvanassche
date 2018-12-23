@@ -9,6 +9,7 @@ h1 {
     text-underline-position: under;
     font-size: 25pt !important;
     font-family: Helvetica, Arial, sans-serif !important;
+    padding: 0 0 20px 0;
 }
 
 h2 {
@@ -26,7 +27,7 @@ h3 {
     text-underline-position: under;
     font-size: 14pt !important;
     font-family: Helvetica, Arial, sans-serif !important;
-    padding: 0 0 20px 0; 
+    padding: 20px 0 0 0; 
 }
 
 p {
@@ -59,15 +60,24 @@ p {
 
 /* Navigatie */
 .navbar-logo {
-    width:60px;
-    height:auto;
-    margin-right:10px;
-    margin-bottom:15px;
-  }
+    width: 60px;
+    height: auto;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
 
 .bg-light {
     background-color: white !important;
 }
+
+.nav-link:hover, .nav-link:active {
+color: #e0ad32 !important;
+}
+
+.active {
+    color: #e0ad32 !important;
+}
+
 
 /* Footer */
 .footer {
@@ -110,8 +120,7 @@ p {
 ============================================== */
 
 /* Tekstblok */
-
-.row-eq-height > div{
+.row-eq-height > div {
     padding-right: 0;
     padding-left: 0;
 }
@@ -122,6 +131,7 @@ p {
 
 .tekst {
     width: 100%;
+    padding: 20px;
 }
 
 .foto {
@@ -259,19 +269,29 @@ div.gallery {
 
 .col-img img {
     width: 100%;
+    padding: 10px 0 0 0;
 }
 
 .col-txt {
     width: 50% !important;
-
 }
-
 
 .tekst-about {
     text-align: left;
     font-family: Helvetica, Arial, sans-serif !important;
     font-size: 12pt; 
-    margin: 0 0 0 0; 
+    margin: 20px 0 0 0; 
+}
+
+.h3-about {
+    text-align: right;
+}
+
+.tekst-about2 {
+    text-align: right;
+    font-family: Helvetica, Arial, sans-serif !important;
+    font-size: 12pt; 
+    margin: 20px 0 0 0; 
 }
 
 
@@ -314,41 +334,30 @@ form {
 /* Small devices (landscape phones, 576px and up)*/
 
 @media (min-width: 576px) {
+    /* Index */
     .tekst {
         width: 100%;
     }
     
     .row-eq-height > div > div {
-        //width: 100%;
         height: 400px;
     }
     .foto img {
-        // min-width: 100%;
-        //max-width: 100%;
         width: auto;
         height: 100%;
-        //object-fit: cover;
-    }
-    
-  
+    }  
 }
 
 
 /* Medium devices (tablets, 768px and up)*/
 
 @media (min-width: 768px) {
-    /* INDEX */
-
-    .tekst {
-        width: 50%;
-    }
-
+    /* Index */
     .container {
         width: 100% !important;
     }
 
-    /* ABOUT */
-
+    /* Contact */
     .tekst-contact {
         text-align: left;
         margin: 5% 0 0 10%;
@@ -373,13 +382,8 @@ form {
 
 /* Large devices (desktops, 992px and up)*/
 
-@media (min-width: 992px) {
-    .tekst {
-        width: 50%;
-    }
-
-    
-    
+@media (min-width: 992px) {    
+    /* Index */
     .container {
         width: 100% !important;
     }
@@ -389,20 +393,14 @@ form {
 /* Extra large devices (large desktops, 1200px and up)*/
 
 @media (min-width: 1200px) {
-    .tekst {
-        width: 50%;
-    }
-    
+    /* Index */    
     .row-eq-height > div > div {
-        //width: 100%;
         height: auto;
     }
+
     .foto img {
-        // min-width: 100%;
-        //max-width: 100%;
         width: 100%;
         height: auto;
-        //object-fit: cover;
     }
 
     .container {
