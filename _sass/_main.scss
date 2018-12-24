@@ -357,8 +357,19 @@ form {
     CART
 ============================================== */
 
+/* Bestelling product */
+.col-cart {
+    border: 1px solid green;
+}
 
+.foto-cart {
+    height: 150px;
+    width: auto;
+}
 
+.tekst-cart {
+    
+}
 
 
 
@@ -485,7 +496,11 @@ form {
         margin: 20px 0 0 0; 
     }
 
-
+    /* Cart */
+    .foto-cart {
+        height: 200px;
+        width: auto;
+    }
 }
 
 
@@ -549,5 +564,11 @@ form {
     /* Contact */
     .btn-send {
         width: 35% !important;
+    }
+
+    /* Cart */
+    .foto-cart {
+        height: 200px;
+        width: auto;
     }
 }

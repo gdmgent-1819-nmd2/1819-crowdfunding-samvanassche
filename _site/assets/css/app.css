@@ -291,6 +291,14 @@ form {
 /* ==============================================
     CART
 ============================================== */
+/* Bestelling product */
+.col-cart {
+  border: 1px solid green; }
+
+.foto-cart {
+  height: 150px;
+  width: auto; }
+
 /* ==============================================
     MEDIA QUERIES
 ============================================== */
@@ -381,7 +389,12 @@ form {
     text-align: right;
     font-family: Helvetica, Arial, sans-serif !important;
     font-size: 12pt;
-    margin: 20px 0 0 0; } }
+    margin: 20px 0 0 0; }
+
+  /* Cart */
+  .foto-cart {
+    height: 200px;
+    width: auto; } }
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
   /* Support us */
@@ -429,4 +442,9 @@ form {
 
   /* Contact */
   .btn-send {
-    width: 35% !important; } }
+    width: 35% !important; }
+
+  /* Cart */
+  .foto-cart {
+    height: 200px;
+    width: auto; } }
