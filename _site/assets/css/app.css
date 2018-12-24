@@ -57,10 +57,38 @@ p {
   background-color: white !important; }
 
 .nav-link:hover, .nav-link:active {
-  color: #e0ad32 !important; }
+  color: #eead14 !important; }
 
 .active {
-  color: #e0ad32 !important; }
+  color: #eead14 !important; }
+
+/* Button */
+.btn-sponsor {
+  background-color: #eead14;
+  border: none;
+  color: white;
+  padding: 14px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 3px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  text-decoration: none;
+  cursor: pointer;
+  position: fixed;
+  top: 300px;
+  right: -75px;
+  z-index: 20; }
+
+#rotate {
+  vertical-align: top;
+  margin-top: 0px;
+  width: 200px;
+  height: auto;
+  transform: rotate(90deg); }
+
+.btn-sponsor:hover {
+  opacity: 1; }
 
 /* Footer */
 .footer {
@@ -68,7 +96,7 @@ p {
   width: 100%;
   height: 80px;
   background-color: black;
-  position: sticky; }
+  position: sticky !important; }
 
 .footericons ul li {
   margin-right: 30px;
@@ -86,10 +114,10 @@ p {
 .fab {
   color: white;
   font-size: 25px;
-  margin-right: 10px; }
+  margin-right: 2px; }
 
 .fab:hover {
-  color: #e0ad32; }
+  color: #eead14; }
 
 /* ==============================================
     INDEX
@@ -117,7 +145,7 @@ p {
   border-radius: 0 !important;
   bottom: 15px !important;
   color: white !important;
-  background-color: #e0ad32 !important;
+  background-color: #eead14 !important;
   display: block !important;
   width: auto !important;
   border: none !important;
@@ -129,63 +157,45 @@ p {
   min-width: auto; }
 
 .btn:hover {
-  background-color: #c08c14 !important; }
+  background-color: #eead14 !important; }
 
 /* ==============================================
     SHOP
 ============================================== */
-.shop {
-  text-align: center; }
-
 .shop img {
   width: 60%;
   height: auto;
-  padding: 30px 0;
+  padding: 20px 0;
   opacity: 0.7;
   position: relative;
   display: inline-block; }
 
-.shop a {
+.shop p {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 12px; }
 
-.center {
+.shop {
   position: relative;
   left: 0;
   top: 50%;
   width: 100%;
   text-align: center;
-  font-size: 18px;
+  font-size: 15px;
   color: white;
   font-family: Helvetica, Arial, sans-serif; }
+
+.center:hover {
+  text-decoration: none;
+  color: #eead14;
+  font-size: 20px; }
 
 /* ==============================================
     SHOP ALL
 ============================================== */
-body {
-  height: 100%; }
-
-div.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
-  display: inline-block;
-  width: 180px;
-  height: 100%; }
-
-div.gallery:hover {
-  border: 1px solid #777;
-  opacity: 0.8; }
-
-div.gallery img {
-  width: 100%;
-  height: 100%; }
-
-div.desc {
-  padding: 15px;
-  text-align: center; }
-
 div.container-shop {
   display: flex;
   flex-flow: row wrap;
@@ -194,6 +204,25 @@ div.container-shop {
   width: auto;
   padding: auto;
   margin: auto; }
+
+div.gallery {
+  margin: 10px 6px;
+  display: inline-block;
+  width: 180px;
+  height: 100%;
+  border: solid #f5f5f5; }
+
+div.gallery:hover {
+  opacity: 0.6; }
+
+div.gallery img {
+  width: 100%;
+  height: 100%; }
+
+div.desc {
+  padding: 10px;
+  text-align: center;
+  background-color: #f5f5f5; }
 
 /* ==============================================
     SHOP SOLOSOCKS
@@ -221,10 +250,10 @@ div.container-shop {
   margin: 20px 0 0 0; }
 
 .h3-about {
-  text-align: right; }
+  text-align: left; }
 
 .tekst-about2 {
-  text-align: right;
+  text-align: left;
   font-family: Helvetica, Arial, sans-serif !important;
   font-size: 12pt;
   margin: 20px 0 0 0; }
@@ -244,6 +273,21 @@ form {
   margin: 0 0 10% 10%;
   width: 70%; }
 
+.btn-send {
+  border-radius: 0 !important;
+  bottom: 15px !important;
+  color: white !important;
+  background-color: #eead14 !important;
+  display: inline-block !important;
+  width: 50% !important;
+  border: none !important;
+  padding: 14px 28px !important;
+  font-size: 14px !important;
+  cursor: pointer !important;
+  text-align: center !important;
+  margin: auto !important;
+  min-width: auto; }
+
 /* ==============================================
     CART
 ============================================== */
@@ -256,19 +300,27 @@ form {
 @media (min-width: 576px) {
   /* Index */
   .tekst {
-    width: 100%; }
+    width: 100%;
+    padding: 20px 20px; }
 
   .row-eq-height > div > div {
-    height: 400px; }
+    height: 350px; }
 
   .foto img {
     width: auto;
-    height: 100%; } }
+    height: 100%; }
+
+  /* Shop */
+  .shop p {
+    font-size: 20px; } }
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
   /* Index */
   .container {
     width: 100% !important; }
+
+  .tekst {
+    padding: 60px 20px; }
 
   /* Contact */
   .tekst-contact {
@@ -283,16 +335,67 @@ form {
     margin: 0 0 10% 10%;
     width: 50%; }
 
-  /* SHOP ALL */
+  /* Shop */
+  .shop p {
+    font-size: 25px; }
+
+  /* Shop All */
   div.gallery {
-    width: 25%; } }
+    width: 25%; }
+
+  /* About */
+  .h3-about {
+    text-align: right; }
+
+  .tekst-about2 {
+    text-align: right;
+    font-family: Helvetica, Arial, sans-serif !important;
+    font-size: 12pt;
+    margin: 20px 0 0 0; } }
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
+  /* Support us */
+  .btn-sponsor {
+    font-size: 20px;
+    right: -85px; }
+
+  #rotate {
+    width: 220px; }
+
   /* Index */
   .container {
-    width: 100% !important; } }
+    width: 100% !important; }
+
+  .tekst {
+    padding: 60px 20px; }
+
+  /* Shop */
+  .shop p {
+    font-size: 25px; }
+
+  /* About */
+  .h3-about {
+    text-align: right; }
+
+  .tekst-about2 {
+    text-align: right;
+    font-family: Helvetica, Arial, sans-serif !important;
+    font-size: 12pt;
+    margin: 20px 0 0 0; } }
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
+  /* Support us */
+  .btn-sponsor {
+    font-size: 20px;
+    right: -100px; }
+
+  #rotate {
+    width: 250px; }
+
+  /* Footer */
+  .fab {
+    margin-right: 20px; }
+
   /* Index */
   .row-eq-height > div > div {
     height: auto; }
@@ -301,5 +404,29 @@ form {
     width: 100%;
     height: auto; }
 
+  .tekst {
+    padding: 65px 20px 65px 20px; }
+
   .container {
-    width: 100% !important; } }
+    width: 100% !important; }
+
+  /* Shop */
+  .shop p {
+    font-size: 40px; }
+
+  .shop img {
+    padding: 30px 0; }
+
+  /* About */
+  .h3-about {
+    text-align: right; }
+
+  .tekst-about2 {
+    text-align: right;
+    font-family: Helvetica, Arial, sans-serif !important;
+    font-size: 12pt;
+    margin: 20px 0 0 0; }
+
+  /* Contact */
+  .btn-send {
+    width: 35% !important; } }
