@@ -94,7 +94,7 @@ color: #eead14 !important;
     cursor: pointer; 
     position: fixed;
     top: 300px;
-    right: -75px; 
+    right: -77px; 
     z-index: 20;
   }
 
@@ -139,7 +139,7 @@ color: #eead14 !important;
 }
 
 .fab:hover {
-    color: #eead14;
+        color: #eead14;
 }
 
 
@@ -171,7 +171,7 @@ color: #eead14 !important;
 }
 
 /* Tekstblok button */
-.btn {
+.btn-pre-order {
     border-radius: 0 !important;
     bottom: 15px !important;
     color: white !important;
@@ -187,9 +187,14 @@ color: #eead14 !important;
     min-width: auto;
 }
 
-.btn:hover {
-    background-color: #eead14 !important;
+.btn-pre-order:hover {
+    opacity: 0.8;
 }
+
+a:link {
+    text-decoration: none;
+}
+
 
 
 /* ==============================================
@@ -365,10 +370,15 @@ form {
 .foto-cart {
     height: 150px;
     width: auto;
+    float: left;
 }
 
-.tekst-cart {
-    
+.tekst-cart1 {
+    text-align: left;
+}
+
+.tekst-cart2 {
+    text-align: left;
 }
 
 

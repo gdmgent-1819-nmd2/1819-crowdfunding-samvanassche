@@ -77,7 +77,7 @@ p {
   cursor: pointer;
   position: fixed;
   top: 300px;
-  right: -75px;
+  right: -77px;
   z-index: 20; }
 
 #rotate {
@@ -141,7 +141,7 @@ p {
   width: 100%; }
 
 /* Tekstblok button */
-.btn {
+.btn-pre-order {
   border-radius: 0 !important;
   bottom: 15px !important;
   color: white !important;
@@ -156,8 +156,11 @@ p {
   margin: auto !important;
   min-width: auto; }
 
-.btn:hover {
-  background-color: #eead14 !important; }
+.btn-pre-order:hover {
+  opacity: 0.8; }
+
+a:link {
+  text-decoration: none; }
 
 /* ==============================================
     SHOP
@@ -297,7 +300,14 @@ form {
 
 .foto-cart {
   height: 150px;
-  width: auto; }
+  width: auto;
+  float: left; }
+
+.tekst-cart1 {
+  text-align: left; }
+
+.tekst-cart2 {
+  text-align: left; }
 
 /* ==============================================
     MEDIA QUERIES
