@@ -191,10 +191,11 @@ a:link {
   color: white;
   font-family: Helvetica, Arial, sans-serif; }
 
-.center:hover {
-  text-decoration: none;
-  color: #eead14;
-  font-size: 20px; }
+div.shop img:hover {
+  opacity: 1; }
+
+div.shop p:hover {
+  opacity: 1; }
 
 /* ==============================================
     SHOP ALL
@@ -291,23 +292,66 @@ form {
   margin: auto !important;
   min-width: auto; }
 
+.btn-send:hover {
+  opacity: 0.8; }
+
 /* ==============================================
     CART
 ============================================== */
-/* Bestelling product */
-.col-cart {
-  border: 1px solid green; }
-
 .foto-cart {
   height: 150px;
   width: auto;
-  float: left; }
+  float: left;
+  margin: 0 0 0 -15px; }
 
 .tekst-cart1 {
-  text-align: left; }
+  text-align: left;
+  padding: 20px 0 0 160px; }
 
 .tekst-cart2 {
-  text-align: left; }
+  text-align: left;
+  padding: 20px 0 0 160px; }
+
+.container {
+  padding: 20px 0 0 40px; }
+
+.col-cart {
+  background-color: #f5f5f5;
+  border: 4px solid #f5f5f5; }
+
+.fas {
+  font-size: 25px;
+  float: right;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: black; }
+
+.fas:hover {
+  color: #eead14; }
+
+/* Check-out */
+.col-check-out {
+  height: 100px;
+  background-color: #f5f5f5; }
+
+.btn-check-out {
+  color: white;
+  background-color: #eead14 !important;
+  display: block !important;
+  width: 100% !important;
+  border: none !important;
+  padding: 10px 28px !important;
+  font-size: 14px !important;
+  cursor: pointer !important;
+  text-align: center !important;
+  min-width: auto; }
+
+.btn-check-out:hover {
+  opacity: 0.8; }
+
+.check-out {
+  padding: 10px 10px; }
 
 /* ==============================================
     MEDIA QUERIES
@@ -330,7 +374,13 @@ form {
 
   /* Shop */
   .shop p {
-    font-size: 20px; } }
+    font-size: 20px; }
+
+  .tekst-cart1 {
+    padding: 20px 0 0 160px; }
+
+  .tekst-cart2 {
+    padding: 25px 0 0 160px; } }
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
   /* Index */
@@ -368,8 +418,14 @@ form {
   .tekst-about2 {
     text-align: right;
     font-family: Helvetica, Arial, sans-serif !important;
-    font-size: 12pt;
-    margin: 20px 0 0 0; } }
+    font-size: 12pt; }
+
+  /* Cart */
+  .tekst-cart1 {
+    padding: 20px 0 0 170px; }
+
+  .tekst-cart2 {
+    padding: 25px 0 0 170px; } }
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
   /* Support us */
@@ -404,7 +460,13 @@ form {
   /* Cart */
   .foto-cart {
     height: 200px;
-    width: auto; } }
+    width: auto; }
+
+  .tekst-cart1 {
+    padding: 20px 0 0 220px; }
+
+  .tekst-cart2 {
+    padding: 65px 0 0 220px; } }
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
   /* Support us */
@@ -457,4 +519,10 @@ form {
   /* Cart */
   .foto-cart {
     height: 200px;
-    width: auto; } }
+    width: auto; }
+
+  .tekst-cart1 {
+    padding: 20px 0 0 220px; }
+
+  .tekst-cart2 {
+    padding: 75px 0 0 220px; } }
