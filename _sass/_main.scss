@@ -408,6 +408,18 @@ form {
     color: #eead14;
 }
 
+form {
+    margin: 0 0 0 0 !important;
+}
+
+.form-group {
+    float: right;
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
+    width: 50px;
+}
+
 /* Check-out */
 
 .col-check-out {
