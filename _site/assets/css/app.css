@@ -312,7 +312,7 @@ form {
   text-align: left;
   padding: 20px 0 0 160px; }
 
-.container {
+.container-cart {
   padding: 20px 0 0 40px; }
 
 .col-cart {
@@ -330,13 +330,13 @@ form {
 .fas:hover {
   color: #eead14; }
 
-form {
+.form-cart {
   margin: 0 0 0 0 !important; }
 
-.form-group {
+.form-control-cart {
   float: right;
   position: absolute;
-  bottom: 5px;
+  bottom: 20px;
   right: 20px;
   width: 50px; }
 
